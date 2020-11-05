@@ -1,0 +1,137 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 16px;
+	line-height: 16px;
+}
+
+
+/********** tabs_wrapper *************/
+
+.tabs_wrapper{
+	max-width: 400px;
+	width: 100%;
+	margin: 20px auto;
+}
+
+.tabs_wrapper .tab{
+	border-bottom: 1px solid #6f7373;
+}
+
+.tabs_wrapper .title{
+	font-size: 21px;
+	background: #eee;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.tabs_wrapper .content{
+	max-height: 0;
+	padding: 0 10px;
+	background: #f3f3f3;
+    overflow: hidden;
+    transition: all 0.5s ease;
+
+
+}
+
+.tabs_wrapper .content.active{
+	max-height: 100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+/********** tabs_wrapper END *************/
+
+/********** tabs_wrapper2 *************/
+
+.tabs_wrapper2{
+	max-width: 400px;
+	width: 100%;
+	margin: 50px auto;
+}
+
+.tabs_wrapper2 .tab_header{
+	display: flex;
+}
+
+.tabs_wrapper2 .tab_header .title{
+	font-size: 20px;
+	padding: 10px;
+	border: 1px solid #000;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+
+.tabs_wrapper2 .tab_header .title.active_t{
+	background: #a2a2a2;
+    color: #fff;
+}
+
+.tabs_wrapper2 .tab_content {
+	padding: 10px;
+	margin-top: 10px;
+	border: 1px solid #000;
+
+}
+
+.tabs_wrapper2 .tab_content .content{
+	display: none;
+}
+
+.tabs_wrapper2 .tab_content .content.active_tab{
+	display: block;
+}
+
+
+/********** tabs_wrapper2 END *************/
+
+
+/********** Slider *************/
+
+.slider_wrapper{
+	width: 600px;
+	margin: 50px auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider_wrapper .track{
+	display: flex;
+	transition: all 0.5s ease;
+}
+
+.slider_wrapper .controls{
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin-top: -25px;
+}
+
+.slider_wrapper .controls .next,
+.slider_wrapper .controls .prev{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #ffffff94;
+	cursor: pointer;
+}
+
+.slider_wrapper .controls .next.disabled,
+.slider_wrapper .controls .prev.disabled{
+	background: #9e9e9e;;
+}
+
+
+
+/********** Slider END *************/
